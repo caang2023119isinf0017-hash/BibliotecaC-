@@ -20,10 +20,8 @@ int main() {
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
         if (!(cin >> opcao)) {
-            cin.clear();
-            cin.ignore(10000, '\n');
             cout << "Entrada inválida. Tente novamente." << endl;
-            continue;
+            return 0;
         }
         cin.ignore(); // limpar newline
 
@@ -65,3 +63,4 @@ int main() {
 
     return 0;
 }
+
